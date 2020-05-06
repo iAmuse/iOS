@@ -1,0 +1,9 @@
+
+
+Needs Refactoring
+=================
+
+Touch Screen
+------------
+End of cycle reset is a modal segue back to the splash.  Should cascade close each segue instead, but not activate viewDidLoad, etc.
+

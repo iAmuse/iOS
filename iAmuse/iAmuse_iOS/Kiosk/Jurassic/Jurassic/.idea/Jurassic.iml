@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CIDR_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../../CocoaHTTPServer/Core">
+      <sourceFolder url="file://$MODULE_DIR$/../../CocoaHTTPServer/Core" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CocoaHTTPServer/Vendor/CocoaAsyncSocket">
+      <sourceFolder url="file://$MODULE_DIR$/../../CocoaHTTPServer/Vendor/CocoaAsyncSocket" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CocoaHTTPServer/Vendor/CocoaLumberjack">
+      <sourceFolder url="file://$MODULE_DIR$/../../CocoaHTTPServer/Vendor/CocoaLumberjack" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/Kiosk.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/Kiosk.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/Kiosk.m">
+      <sourceFolder url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/Kiosk.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/OutputMedia.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/OutputMedia.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/OutputMedia.m">
+      <sourceFolder url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/OutputMedia.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/Photo.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/Photo.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/Photo.m">
+      <sourceFolder url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/Photo.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/PhotoLayout.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/PhotoLayout.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/PhotoLayout.m">
+      <sourceFolder url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/PhotoLayout.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/PhotoSession.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/PhotoSession.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/PhotoSession.m">
+      <sourceFolder url="file://$MODULE_DIR$/../../CoreAmuse/CoreAmuse/PhotoSession.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../DCRoundSwitch/DCRoundSwitch">
+      <sourceFolder url="file://$MODULE_DIR$/../../DCRoundSwitch/DCRoundSwitch" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../DejalActivityView/DejalActivityView.h">
+      <sourceFolder url="file://$MODULE_DIR$/../../DejalActivityView/DejalActivityView.h" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../DejalActivityView/DejalActivityView.m">
+      <sourceFolder url="file://$MODULE_DIR$/../../DejalActivityView/DejalActivityView.m" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$/iAmuse-Print-Info.plist">
+      <sourceFolder url="file://$MODULE_DIR$/iAmuse-Print-Info.plist" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../iAmuse">
+      <sourceFolder url="file://$MODULE_DIR$/../../iAmuse" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../../iCarousel/iCarousel">
+      <sourceFolder url="file://$MODULE_DIR$/../../iCarousel/iCarousel" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
+

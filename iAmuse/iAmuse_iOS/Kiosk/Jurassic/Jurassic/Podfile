@@ -1,0 +1,26 @@
+platform :ios,	'7.0'
+
+target 'iAmuse' do
+
+pod 'RestKit',	'~> 0.20.0'
+pod 'SBJson4', '~> 4.0'
+pod 'LRResty', '~> 0.11.0'
+pod 'IGFuture', '~> 0.2.2'
+pod 'ASIHTTPRequest', '~> 1.8.1'
+pod 'MBProgressHUD', '~> 0.7'
+pod 'libextobjc', '~>0.3'
+pod 'TSMessages', '~> 0.9.4'
+pod 'ReactiveCocoa', '~> 2.1.6'
+pod 'M13Checkbox', '~> 1.1'
+pod 'DateTools', '~> 1.0'
+pod 'ABPadLockScreen', '~> 3.1'
+pod 'ReactiveCocoa', '~> 2.1.6'
+pod 'Fabric', '~> 1.10.2'
+pod 'Crashlytics', '~> 3.14.0'
+pod 'Firebase/Analytics'
+
+target :'iAmuse Print Tests' do
+   pod 'Kiwi/XCTest'
+end
+
+end

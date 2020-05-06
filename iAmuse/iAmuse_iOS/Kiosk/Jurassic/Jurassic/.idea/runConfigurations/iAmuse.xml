@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="iAmuse" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="iAmuse" PROJECT_NAME="iAmuse" TARGET_NAME="iAmuse" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="iAmuse" RUN_TARGET_NAME="iAmuse" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <envs />
+    <RunnerSettings RunnerId="AppRunner" />
+    <ConfigurationWrapper RunnerId="AppRunner" />
+    <method />
+  </configuration>
+</component>

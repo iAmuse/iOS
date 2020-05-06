@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16A323" minimumToolsVersion="Xcode 4.3" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Kiosk" representedClassName="Kiosk" syncable="YES">
+        <attribute name="activatedOn" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="cloudKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cloudSessionKey" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="contactLabel1" optional="YES" attributeType="String" defaultValueString="Support: support@iamuse.com" syncable="YES"/>
+        <attribute name="contactLabel2" optional="YES" attributeType="String" defaultValueString="Phone: " syncable="YES"/>
+        <attribute name="deviceID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="productId" attributeType="String" syncable="YES"/>
+        <attribute name="projectCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publicUsageLabel" optional="YES" attributeType="String" defaultValueString="Are you over 18 and can we use your photo as an example?" syncable="YES"/>
+        <relationship name="defaultLayout" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PhotoLayout" inverseName="kiosk" inverseEntity="PhotoLayout" syncable="YES"/>
+        <relationship name="photoLayouts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PhotoLayout" inverseName="layoutKiosk" inverseEntity="PhotoLayout" syncable="YES"/>
+    </entity>
+    <entity name="OutputMedia" representedClassName="OutputMedia" syncable="YES">
+        <relationship name="photo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Photo" inverseName="selection" inverseEntity="Photo" syncable="YES"/>
+        <relationship name="session" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PhotoSession" inverseName="selections" inverseEntity="PhotoSession" syncable="YES"/>
+    </entity>
+    <entity name="Photo" representedClassName="Photo" syncable="YES">
+        <attribute name="createdOn" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="failCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="photoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="renderVersion" attributeType="String" defaultValueString="d1c1" syncable="YES"/>
+        <attribute name="toCloudOn" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="toKioskOn" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="selection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="OutputMedia" inverseName="photo" inverseEntity="OutputMedia" syncable="YES"/>
+        <relationship name="session" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PhotoSession" inverseName="photos" inverseEntity="PhotoSession" syncable="YES"/>
+    </entity>
+    <entity name="PhotoLayout" representedClassName="PhotoLayout" syncable="YES">
+        <attribute name="background" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="bottomCurtain" optional="YES" attributeType="Decimal" defaultValueString="0" syncable="YES"/>
+        <attribute name="desc" attributeType="String" defaultValueString="(missing description)" syncable="YES"/>
+        <attribute name="foreground" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" attributeType="String" defaultValueString="(missing name)" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" indexed="YES" syncable="YES"/>
+        <attribute name="scale" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="xOffset" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="yOffset" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="kiosk" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Kiosk" inverseName="defaultLayout" inverseEntity="Kiosk" syncable="YES"/>
+        <relationship name="layoutKiosk" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Kiosk" inverseName="photoLayouts" inverseEntity="Kiosk" syncable="YES"/>
+        <relationship name="sessions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PhotoSession" inverseName="layout" inverseEntity="PhotoSession" syncable="YES"/>
+    </entity>
+    <entity name="PhotoSession" representedClassName="PhotoSession" syncable="YES">
+        <attribute name="chosenNewsletter" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="chosenPhotoUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chosenPublic" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="chosenPublicAgeAck" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="chosenPublicScope" attributeType="String" defaultValueString="Chosen Only" syncable="YES"/>
+        <attribute name="createdOn" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="failCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="photoSessionId" attributeType="String" syncable="YES"/>
+        <attribute name="toCloudOn" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <relationship name="layout" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PhotoLayout" inverseName="sessions" inverseEntity="PhotoLayout" syncable="YES"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Photo" inverseName="session" inverseEntity="Photo" syncable="YES"/>
+        <relationship name="selections" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="OutputMedia" inverseName="session" inverseEntity="OutputMedia" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Kiosk" positionX="-6779" positionY="-3087" width="128" height="238"/>
+        <element name="OutputMedia" positionX="-6201" positionY="-2817" width="128" height="73"/>
+        <element name="Photo" positionX="-6374" positionY="-2722" width="128" height="163"/>
+        <element name="PhotoLayout" positionX="-6588" positionY="-3042" width="128" height="225"/>
+        <element name="PhotoSession" positionX="-6399" positionY="-2998" width="128" height="238"/>
+    </elements>
+</model>

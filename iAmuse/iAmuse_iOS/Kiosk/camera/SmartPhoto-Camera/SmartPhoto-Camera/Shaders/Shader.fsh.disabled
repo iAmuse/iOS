@@ -1,0 +1,14 @@
+//
+//  Shader.fsh
+//  SmartPhoto Camera
+//
+//  Created by Roland Hordos on 2013-05-06.
+//  Copyright (c) 2013 Tandroid. All rights reserved.
+//
+
+varying lowp vec4 colorVarying;
+
+void main()
+{
+    gl_FragColor = colorVarying;
+}

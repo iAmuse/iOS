@@ -1,0 +1,45 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8f2815ba-0d13-4734-9fe7-b8d4307e3a2a++4318",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "aae5206d-9e07-4f4a-8f49-59bf35707837" : {
+
+    },
+    "84c3d499-1933-4b72-8511-972ace6ae3a6++4318" : {
+
+    },
+    "8f2815ba-0d13-4734-9fe7-b8d4307e3a2a++4318" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "aae5206d-9e07-4f4a-8f49-59bf35707837" : 0,
+    "84c3d499-1933-4b72-8511-972ace6ae3a6++4318" : 9223372036854775807,
+    "8f2815ba-0d13-4734-9fe7-b8d4307e3a2a++4318" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "497ADF18-56DC-4FBC-A28E-8F479C66F0E3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "aae5206d-9e07-4f4a-8f49-59bf35707837" : "iAmuse_SVN",
+    "84c3d499-1933-4b72-8511-972ace6ae3a6++4318" : "",
+    "8f2815ba-0d13-4734-9fe7-b8d4307e3a2a++4318" : "IAmuseWorkingCopy\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "iAmuse",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iAmuse\/Kiosk\/Jurassic\/Jurassic\/iAmuse.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/dev.rapidsoft.in:9999\/svn\/ripple",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "84c3d499-1933-4b72-8511-972ace6ae3a6++4318"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.1.204:9999\/svn\/iAmusePhase2",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8f2815ba-0d13-4734-9fe7-b8d4307e3a2a++4318"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/192.168.1.204:9999\/svn\/iAmuse",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "aae5206d-9e07-4f4a-8f49-59bf35707837"
+    }
+  ]
+}
